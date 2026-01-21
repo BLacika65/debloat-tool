@@ -1,7 +1,7 @@
 {
   "name": "debloat-tool",
   "version": "1.0.0",
-  "description": "Windows 11 Debloat Tool - Hordozható verzió",
+  "description": "PC Egyszeregy Debloat Tool - Hordozható verzió",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
