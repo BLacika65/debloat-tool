@@ -1,0 +1,45 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Háttér gradiens (Windows 11 kék) -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0063B1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="trashGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E0E0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Kerekített négyzet háttér -->
+  <rect width="256" height="256" rx="50" fill="url(#bgGrad)"/>
+  
+  <!-- Szemetes kuka -->
+  <g transform="translate(128, 128)">
+    <!-- Kuka test -->
+    <path d="M -50 -20 L -40 60 Q -40 70 -30 70 L 30 70 Q 40 70 40 60 L 50 -20 Z" 
+          fill="url(#trashGrad)" stroke="#333" stroke-width="3"/>
+    
+    <!-- Kuka vonalak -->
+    <line x1="-30" y1="-10" x2="-35" y2="50" stroke="#0078D4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-10" x2="0" y2="50" stroke="#0078D4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="30" y1="-10" x2="35" y2="50" stroke="#0078D4" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Kuka fedél -->
+    <rect x="-60" y="-30" width="120" height="12" rx="3" fill="#FFFFFF" stroke="#333" stroke-width="3"/>
+    
+    <!-- Kuka fogantyú -->
+    <path d="M -25 -30 L -25 -45 Q -25 -55 -15 -55 L 15 -55 Q 25 -55 25 -45 L 25 -30" 
+          fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- X szimbólum (debloat) -->
+    <g transform="translate(0, -75)">
+      <circle cx="0" cy="0" r="22" fill="#FF4444" opacity="0.95"/>
+      <line x1="-10" y1="-10" x2="10" y2="10" stroke="white" stroke-width="5" stroke-linecap="round"/>
+      <line x1="10" y1="-10" x2="-10" y2="10" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Árnyék effekt -->
+  <ellipse cx="128" cy="230" rx="80" ry="10" fill="black" opacity="0.2"/>
+</svg>

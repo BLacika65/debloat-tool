@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Debloat Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-trash"></i> Windows 11 Debloat Tool <span class="version">v1.0</span></h1>
+        </div>
+
+        <div class="main-wrapper">
+            <div class="sidebar">
+                <div class="side-block restore-section">
+                    <div class="restore-header"><i class="fas fa-history"></i> <h3>Visszaállítási pont kezelés</h3></div>
+                    <div class="restore-info"><i class="fas fa-exclamation-triangle"></i> <span>Módosítás előtt, készíts visszaállítási pontot!
+  </span>
+
+</div>
+                    <div class="restore-controls">
+                        <button class="btn-create" onclick="createRestorePoint()"><i class="fas fa-plus-circle"></i> Rendszervisszaállítási pont létrehozása</button>
+                        <button class="btn-restore" onclick="restoreSystem()"><i class="fas fa-undo"></i> Rendszervisszaállítás</button>
+                    </div>
+                </div>
+
+                <div class="side-block action-block">
+                    <button class="btn-delete" onclick="startRemoval()" id="deleteBtn"><i class="fas fa-broom"></i> KIJELÖLTEK TÖRLÉSE</button>
+                </div>
+
+                <div class="side-block promo-sidebar">
+                    <button class="btn-promo-small" onclick="openPowerShellToolbox()">
+                        <i class="fas fa-rocket"></i>
+                        <div class="promo-content"><strong>PowerShell Toolbox weboldal</strong><small>(100+ kész megoldás rendszerhangoláshoz)</small></div>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="theme-switch-wrapper">
+    <div class="theme-switch-container">
+        <input type="radio" name="theme" id="theme-system" value="system" onchange="changeTheme(this.value)" checked>
+        <label for="theme-system" title="Rendszer"><i class="fas fa-desktop"></i></label>
+        
+        <input type="radio" name="theme" id="theme-light" value="light" onchange="changeTheme(this.value)">
+        <label for="theme-light" title="Világos"><i class="fas fa-sun"></i></label>
+        
+        <input type="radio" name="theme" id="theme-dark" value="dark" onchange="changeTheme(this.value)">
+        <label for="theme-dark" title="Sötét"><i class="fas fa-moon"></i></label>
+        
+        <div class="switch-selection"></div>
+    </div>
+</div>
+                    <div class="footer-text-sidebar">© 2025 PC Egyszeregy</div>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="apps-section">
+                    <div class="apps-header">
+                        <div class="apps-title"><i class="fas fa-list"></i> <h3>Törölhető alkalmazások</h3></div>
+                        <div class="selection-buttons">
+                               <button class="btn-select btn-check" onclick="checkInstalledApps()">
+        <i class="fas fa-sync-alt"></i> Ellenőrzés
+    </button>
+    <button class="btn-select" onclick="selectSafe()">
+        <i class="fas fa-shield-alt"></i> Biztonságos
+    </button>
+    <button class="btn-select" onclick="selectAll()">
+        <i class="fas fa-check-double"></i> Mind
+    </button>
+    <button class="btn-select" onclick="deselectAll()">
+        <i class="fas fa-times"></i> Törlés
+    </button>
+</div>
+                    </div>
+                    <div class="apps-grid" id="appsGrid"></div>
+                    <div class="apps-stats">
+                        <span><span id="selectedCount">0</span> kiválasztva</span>
+                        <span><i class="fas fa-hdd"></i> <span id="spaceSaving">~0 MB</span></span>
+
+                    </div>
+                </div>
+                <div class="status-section" id="statusSection"><i class="fas fa-info-circle"></i> <span id="statusText">Indításra kész...</span></div>
+<div class="user-info"><span><i class="fas fa-user-shield"></i>
+ 
+    Minden művelet kizárólag felhasználói kérésre történik.
+    A program nem futtat automatikus háttérfolyamatokat.
+</span> </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
