@@ -180,7 +180,7 @@ A: Igen! Ezek mind opcionális alkalmazások, amelyek eltávolítása nem befoly
 A: Igen! A legtöbb app újratelepíthető a Microsoft Store-ból, vagy visszaállítási pontból visszaállítható a rendszer.
 
 **Q: Miért jelenik meg Windows SmartScreen figyelmeztetés?**  
-A: Az alkalmazás jelenleg SignPath.io jóváhagyásra vár. Miután aláírásra került, ez a figyelmeztetés el fog tűnni.
+A: Az alkalmazás jelenleg SignPath.io jóváhagyásra vár.
 
 ---
 
