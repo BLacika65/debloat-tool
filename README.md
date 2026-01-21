@@ -34,8 +34,8 @@ The tool allows you to uninstall built-in Windows applications using PowerShell.
 
 ## 📥 Download
 
-**Portable version:** [Download DebloatTool-Portable.exe](https://github.com/BLacika65/debloat-tool/releases/latest)
-**Installable version:** Coming soon
+- **Portable version:** [Download DebloatTool-Portable.exe](https://github.com/BLacika65/debloat-tool/releases/latest)
+- **Installable version:** Coming soon
 
 ### System Requirements
 
