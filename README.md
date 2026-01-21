@@ -34,13 +34,14 @@ The tool allows you to uninstall built-in Windows applications using PowerShell.
 
 ## 📥 Download
 
-**Latest Release:** [Download DebloatTool-Portable.exe](https://github.com/BLacika65/debloat-tool/releases/latest)
+**Portable version:** [Download DebloatTool-Portable.exe](https://github.com/BLacika65/debloat-tool/releases/latest)
+**Installable version:** Coming soon
 
 ### System Requirements
 
 - Windows 10 (64-bit) or Windows 11
 - Administrator privileges (only for app removal)
-- ~50MB free disk space
+- ~70MB free disk space
 
 ### 🛡️ Windows SmartScreen Notice
 
@@ -49,7 +50,7 @@ On first run, Windows may show a SmartScreen warning. This is normal for new app
 1. Click **"More info"**
 2. Click **"Run anyway"**
 
-The application is digitally signed through SignPath.io and is completely safe. All source code is available for review in this repository.
+The application all source code is available for review in this repository.
 
 ## 🖥️ How It Works
 
@@ -94,13 +95,12 @@ The built executable will be in the `dist/` folder.
 
 ## 📦 Production & Releases
 
-We are currently applying for code-signing through **SignPath.io**. Signed `.exe` files will be available in the [Releases](https://github.com/BLacika65/debloat-tool/releases) section once the process is complete.
+ [Releases](https://github.com/BLacika65/debloat-tool/releases) section once the process is complete.
 
 ### Build Configuration
 
 - **Portable version:** No installation required, runs from any location
 - **Installer version:** Coming soon
-- **Code signing:** SignPath.io (pending approval)
 
 ## 🤝 Contributing
 
@@ -120,7 +120,6 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for more informati
 
 **PC Egyszeregy**
 - Website: [pcegyszeregy.hu](https://pcegyszeregy.hu)
-- PowerShell Toolbox: [pcegyszeregy.hu/powershelltoolbox](https://pcegyszeregy.hu/powershelltoolbox/powershell-toolbox.html)
 
 ## ⚠️ Disclaimer
 
@@ -128,7 +127,7 @@ This tool is provided for educational and personal use. Always create a system r
 
 ---
 
-# 🇭🇺 Magyar leírás
+# Magyar leírás
 
 ## Mi ez?
 
